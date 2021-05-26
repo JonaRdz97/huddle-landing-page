@@ -1,0 +1,497 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fuentes utilizadas*/
+.title{
+    font-family: 'Poppins', sans-serif;
+}
+
+.text{
+    font-family: 'Open Sans', sans-serif;
+}
+
+/** Header **/
+.container-logo{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 2rem;
+}
+
+.btn-try-it{
+    font-family: 'Open Sans', sans-serif;
+    background-color: white;
+    color:  hsl(322, 100%, 66%);
+    font-weight: 600;
+    border: 2px solid hsl(322, 100%, 66%);
+    height: 40px;
+    border-radius: 20px;
+}
+
+.container-header-text{
+    margin: 90px auto auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.header-title, .header-subtitle{
+    text-align: center;
+}
+
+.header-title{
+    font-size: 2.6rem;
+    margin: 15px 20%;
+}
+
+.header-subtitle{
+    font-weight: 400;
+    font-size: 1rem;
+    margin: 15px 30%;
+}
+
+.btn-get-started{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 1.2rem;
+    background-color:  hsl(322, 100%, 66%);
+    color: white;
+    border: none;
+    height: 60px;
+    border-radius: 40px;
+    margin: 10px auto 40px;
+    box-shadow: -3px 3px 8px 0 gray;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+.btn-try-it:hover{
+    box-shadow: -1px -1px 8px 0 hsl(321, 100%, 78%);
+}
+
+.btn-get-started:hover{
+    background-color: hsl(321, 100%, 78%);
+}
+
+.suscribe button:hover{
+    background-color: hsl(321, 100%, 78%);
+}
+
+.mockups{
+    width: 55%;
+    margin: 1.5rem auto 5rem;
+}
+
+.stats-header{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.num{
+    font-family: 'Poppins', sans-serif;
+    font-size: 4.5rem;
+}
+
+.num-desc{
+    color: gray;
+    font-size: 1.2rem;
+}
+
+/*** Waves utilizadas**/
+.wave{
+    height: 7.375rem;
+    width: 100%;
+}
+
+/*** Secciones ***/
+.grow-info,.conversation-info,.users-info{
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.grow-info, .users-info{
+    position: relative;
+    background-color: hsl(207, 100%, 98%);
+}
+
+.grow-text h3, .conversation-text h3, .users-text h3{
+    font-size: 2.6rem;
+}
+
+.description{
+    font-size: 1rem;
+}
+
+.grow-img, .users-img, .conversation-img{
+    width: 65%;
+    margin: 4rem auto;
+}
+
+.grow-info, .conversation-info, .users-info,.build-community{
+    margin: 12rem auto;
+}
+
+.wave-top1, .wave-top2, .footer-wave{
+    position: absolute;
+    top: -7.375rem;
+}
+
+.wave-bottom1,.wave-bottom2{
+    position: absolute;
+    bottom: -7.375rem;
+}
+
+.build-community{
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    flex-direction: column;
+}
+
+.title-community{
+    text-align: center;
+    font-size: 2.6rem;
+    margin: 2rem 20%;
+}
+
+/* Footer*/
+footer{
+    position: relative;
+    background-color:hsl(192, 100%, 9%);
+    color: hsl(207, 100%, 98%);
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+footer p a{
+    color: hsl(207, 100%, 98%);
+}
+
+.contact-info, .suscribe{
+    width: 60%;
+    margin: 2rem auto;
+}
+
+.logo-white{
+    margin: 2rem auto 1.5rem;
+    width: 50%;
+}
+
+.contact-info p{
+    margin: 1.5rem auto;
+}
+
+.contact-info p span{
+    margin-right: 8px;
+}
+
+.contact-info a{
+    display: inline-block;
+    margin-top: 2rem;
+}
+
+.suscribe h5{
+    font-size: 1.5rem;
+    margin: 2rem auto 1.5rem;
+
+}
+
+.suscribe p{
+    margin-bottom: 1.5rem;
+    width: 80%;
+}
+
+.suscribe input{
+    height: 40px;
+    border-radius: 8px;
+    margin-right: 15px;
+}
+
+.suscribe button{
+    margin: auto;
+    height: 40px;
+    background-color:  hsl(322, 100%, 66%);
+    color: white;
+    border: none;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    border-radius: 8px;
+}
+
+.attribution{
+    grid-column: 1/-1;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+/*********** Media queries ***************/
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    html{
+        font-size: 12px;
+    }
+
+    .container-logo{
+        padding: 10px;
+    }
+
+    .container-logo img{
+        width: 35%;
+        height: 30px;
+        margin-top: 5px;
+    }
+
+    .btn-try-it{
+        width: 35%;
+    }
+
+    .container-header-text{
+        margin: 40px auto auto;
+    }
+    
+    .header-subtitle{
+        margin: 15px 15%;
+    }
+    
+    .btn-get-started{
+        width: 60%;
+        padding: 5px;
+    }
+
+    .mockups{
+        width: 70%;
+    }
+
+    .stats-header{
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .message-icon{
+        margin-top: 3rem;
+    }
+
+    .grow-info, .conversation-info, .users-info{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .grow-info, .users-info{
+        flex-direction: column-reverse;
+    }
+    
+    .conversation-info{
+        flex-direction: column;
+    }
+
+    .grow-text, .conversation-text, .users-text{
+        text-align: center;
+        margin: auto 10% 2rem;
+    }
+    
+    .title-community{
+        text-align: center;
+        font-size: 2.6rem;
+        margin: 15px 20%;
+    }
+    
+    .contact-info, .suscribe{
+        grid-column: 1/-1;
+        width: 85%;
+        margin: auto;
+    }
+    
+    .logo-white{
+        width: 50%;
+        margin: 3rem 25% 1.5rem;
+    }
+    
+    .contact-info p{
+        text-align: center;
+    }
+
+    .social-media-container{
+        margin: auto 5%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .social-media-icon{
+        width: 25px;
+        height: 25px;
+        margin: auto 10px;
+    }
+
+    .suscribe h5, .suscribe p{
+        text-align: center;
+        width: 100%;
+    }
+    
+    .suscribe input{
+        display: block;
+        width: 60%;
+        margin: 15px auto;
+    }
+    
+    .suscribe button{
+        display: block;
+        width: 40%;
+        margin: 15px auto;
+    }
+
+    .attribution{
+        margin: 10px 10% 20px;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 601px and up) */
+@media only screen and (min-width: 601px) {
+    html{
+        font-size: 14px;
+    }
+    
+    .btn-try-it{
+        width: 30%;
+    }
+    
+    .header-title{
+        font-size: 2.6rem;
+        margin: 15px 10%;
+    }
+
+    .header-subtitle{
+        margin: 15px 10%;
+    }
+
+    .btn-get-started{
+        width: 50%;
+    }
+
+    .mockups{
+        width: 75%;
+    }
+
+    .grow-text, .conversation-text, .users-text{
+        text-align: center;
+        margin: auto 5% auto;
+    }
+ 
+    .contact-info, .suscribe{
+        width: 80%;
+        margin: 2rem auto;
+    }
+
+    .social-media-icon{
+        width: 25px;
+        height: 25px;
+        margin: auto 10px;
+    }
+
+    .suscribe p, .suscribe h5{
+        text-align: center;
+        margin-bottom: 1.5rem;
+        width: 100%;
+    }
+
+    .suscribe input{
+        display: block;
+        width: 70%;
+        height: 40px;
+        margin: 15px auto;
+    }
+
+    .suscribe button{
+        display: block;
+        width: 50%;
+        margin: 15px auto;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .btn-try-it{
+        width: 20%;
+    }
+
+    .btn-get-started{
+        width: 35%;
+    }
+
+    .grow-text, .conversation-text, .users-text{
+        text-align: left;
+        margin: auto 15% auto;
+    }
+
+    .social-media-icon{
+        width: 30px;
+        height: 30px;
+        margin-right: 10px;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    html{
+        font-size: 14px;
+    }
+
+    .btn-try-it{
+        width: 15%;
+    }
+
+    .header-title{
+        margin: 15px 20%;
+    }
+
+    .header-subtitle{
+        margin: 15px 25%;
+    }
+    
+    .btn-get-started{
+        width: 25%;
+    }
+
+    .logo-white{
+        margin: 2rem auto 1.5rem;
+        width: 40%;
+    }
+    
+    .suscribe h5, .suscribe p{
+        text-align: left;
+        width: 80%;
+    }
+
+    .suscribe input{
+        display: inline-block;
+        width: 50%;
+        margin-right: 15px;
+    }
+
+    .suscribe button{
+        display: inline-block;
+        width: 30%;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    html{
+        font-size: 16.5px;
+    }
+
+    .btn-try-it{
+        width: 10%;
+    }
+}
