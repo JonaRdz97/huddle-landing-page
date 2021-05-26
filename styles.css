@@ -467,15 +467,20 @@ footer p a{
         margin: 2rem auto 1.5rem;
         width: 40%;
     }
-    
-    .suscribe h5, .suscribe p{
+
+    .suscribe h5{
+        text-align: left;
+        width: 100%;
+    }
+
+    .suscribe p{
         text-align: left;
         width: 80%;
     }
-
+    
     .suscribe input{
         display: inline-block;
-        width: 50%;
+        width: 45%;
         margin-right: 15px;
     }
 
